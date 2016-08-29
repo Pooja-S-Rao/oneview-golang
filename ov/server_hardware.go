@@ -129,13 +129,13 @@ func (h ServerHardware) GetIloIPAddress() string {
 					(MpDHCP.Equal(MpIpObj.Type) ||
 						MpStatic.Equal(MpIpObj.Type) ||
 						MpUndefined.Equal(MpIpObj.Type)) {
-                                        log.Infof("In server hardware :%s",MpIpObj.Address)
+                                        log.Infof("In server hardware1 :%s",MpIpObj.Address)
 					return MpIpObj.Address
 				}
 			}
 		}
 	} else {
-                log.Infof("In server hardware :%s",h.MpIpAddress)
+                log.Infof("In server hardware2 :%s",h.MpIpAddress)
 		return h.MpIpAddress
 	}
 	return ""
