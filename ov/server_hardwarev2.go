@@ -35,6 +35,7 @@ func (c *OVClient) IsHardwareSchemaV2() bool {
 	currentversion = currentversion.CalculateVersion(c.APIVersion, 108) // force icsp to 108 version since icsp version doesn't matter
 	log.Infof("inside server_hardwarev2 :%s",currentversion)
 	asc = asc.NewByName("server_hardwarev2.go")
+	log.Infof("asc :%s",asc)
 	if asc.IsSupported(currentversion) {
 		log.Debugf("IsHardwareSchemaV2 is supported: %+v", currentversion)
 		return true
