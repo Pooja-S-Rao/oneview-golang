@@ -99,7 +99,7 @@ This project is licensed under the Apache License, Version 2.0.  See LICENSE for
       }
     }
 3.In the /oneview-golang/ov folder inside the file profiles.go
-#func (c *OVClient) CreateProfileFromTemplate(name string, template ServerProfile, blade ServerHardware) error {
+ func (c *OVClient) CreateProfileFromTemplate(name string, template ServerProfile, blade ServerHardware) error {
   a) ovversion = c.APIVersion   #To retrieve the API Version of OneView
   //GET on /rest/server-profile-templates/{id}new-profile
     if c.IsProfileTemplates() {
